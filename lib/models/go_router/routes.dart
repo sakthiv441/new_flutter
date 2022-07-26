@@ -3,15 +3,13 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:new_flutter/models/app_state_manager.dart';
-import 'package:new_flutter/models/grocery_item.dart';
+
 import 'package:new_flutter/models/grocery_manager.dart';
 import 'package:new_flutter/models/profile_manager.dart';
-import 'package:new_flutter/models/user.dart';
+
 import 'package:new_flutter/screens/screens.dart';
 import 'package:provider/provider.dart';
-import '../grocery_item.dart';
 
-import '../test/home_screen.dart';
 import 'constants.dart';
 
 class MyRouter {

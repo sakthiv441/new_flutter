@@ -69,7 +69,7 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
             ),
             title: Text(
-              'My Recipe App',
+              'My Recipes App',
               style: Theme.of(context).textTheme.headline6,
             ),
             centerTitle: true,
