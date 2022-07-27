@@ -33,15 +33,13 @@ class GroceryItemScreen extends StatefulWidget {
     required this.oncreate,
     required this.onUpdate,
     this.originalItem,
-    this.index = -1,
-  })  : isUpadting = (originalItem != null),
+  })  :
         super(key: key);
 
   final Function(GroceryItem) oncreate;
   final Function(GroceryItem, int) onUpdate;
   final GroceryItem? originalItem;
-  final bool isUpadting;
-  final int index;
+
 
   @override
   State<GroceryItemScreen> createState() => _GroceryItemScreenState();
@@ -104,11 +102,9 @@ class _GroceryItemScreenState extends State<GroceryItemScreen> {
                   _timeOfDay.minute,
                 ),
               );
-              if (widget.isUpadting) {
-                widget.onUpdate(groceryItem, widget.index);
-              } else {
-                widget.oncreate(groceryItem);
-              }
+              
+                widget.onUpdate(groceryItem);
+             
               GoRouter.of(context).pop();
             },
             icon: const Icon(Icons.check),
